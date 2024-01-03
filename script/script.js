@@ -82,7 +82,10 @@ const iconaMeteo = function () {}; //todo
 //-------------------------------------------------------------------------------------------------
 // Funzione per aggiungere backgrounf in base all'ora attuale
 const background = function () {
-  if (hours >= 5 && hours <= 8) {
+  if (hours === 0 && hours >= 4) {
+    imagePath = "../assets/img/alba.png";
+    document.body.style.background = `url('${imagePath}')`;
+  } else if (hours >= 5 && hours <= 8) {
     imagePath = "../assets/img/alba.png";
     document.body.style.background = `url('${imagePath}')`;
   } else if (hours >= 9 && hours <= 15) {
@@ -94,8 +97,8 @@ const background = function () {
   } else if (hours >= 18 && hours <= 20) {
     imagePath = "../assets/img/sera.png";
     document.body.style.background = `url('${imagePath}')`;
-  } else if (hours >= 21 && hours <= 4) {
-    imagePath = "../assets/img/sera.png";
+  } else if (hours >= 21 && hours <= 23) {
+    imagePath = "../assets/img/notte.png";
     document.body.style.background = `url('${imagePath}')`;
   }
 };
