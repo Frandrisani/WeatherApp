@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather Pro</title>
+  </head>
+
+  <body>
+    <!-- Menù in alto a destra. Hamburger su dispisitivi mobile -->
+    <nav>
+      <div class="menu">
+        <a href=""><i class="fas fa-bars" style="color: #8fabdc"></i></a>
+        <!-- <ul>
+        <li><a href="#">City</a></li>
+        <li><a href="#">C° or F°</a></li>
+        <li><a href="#">Credits</a></li>
+      </ul> -->
+      </div>
+      <div class="lente">
+        <a href=""
+          ><i class="fas fa-search-location" style="color: #8ab5ff"></i
+        ></a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Section 1 - Meteo del giorno, aimazione icone, temperatura/data/città -->
+      <section id="section1">
+        <div class="grafico">
+          <svg width="400" height="400">
+            <circle
+              cx="200"
+              cy="200"
+              r="150"
+              stroke="#f0f8ff"
+              stroke-width="4"
+              fill="none"
+            />
+          </svg>
+          <div class="informazioni">
+            <!-- data, TEMPERATURA ATTUALE, città -->
+          </div>
+          <div id="iconConteiner">
+            <!-- <img id="wicon" src="" alt="Weather icon"></div> -->
+          </div>
+        </div>
+        <div id="informazioniMeteoAttuale">
+          <!-- Descrizione meteo ATTUALE -->
+          <p>Condizioni meteo attuali:</p>
+          <img id="wicon" src="" alt="Weather icon" />
+        </div>
+      </section>
+
+      <!-- Section 2 - Meteo di 5 giorni con temperatura, vento e previsione -->
+      <section id="section2">
+        <div class="margin" id="temperatura">
+          <!-- div min e max -->
+          <p>Temperatura</p>
+        </div>
+        <div class="margin" id="umidita">
+          <!-- umidità -->
+          <p>Umidità</p>
+        </div>
+        <div class="margin" id="vento">
+          <!-- velocità vento -->
+          <p>Velocità del vento</p>
+        </div>
+        <div class="margin" id="sole">
+          <!-- alba e tramonto -->
+        </div>
+      </section>
+    </main>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
